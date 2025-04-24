@@ -23,11 +23,11 @@ import java.util.Scanner;
             //convert temperature based on user choice
             double convertedTemperature;
             if (choice == 1) {
-                convertedTemperature = (temperature * 1.8) + 32;
+                convertedTemperature = (temperature - 32) / 1.8;
                 System.out.println("The converted temperature is: " + convertedTemperature + "°C");
             }
             else if (choice == 2) {
-                convertedTemperature = (temperature - 32) * 0.555;
+                convertedTemperature = (temperature * 1.8) + 32;
                 System.out.println("The converted temperature is: " + convertedTemperature + "°F");
             }
             else {
@@ -37,8 +37,6 @@ import java.util.Scanner;
         }
 
         //close scanner
-  Scanner.close();
-
         //end of main method
         //end of main class
         //end of program
